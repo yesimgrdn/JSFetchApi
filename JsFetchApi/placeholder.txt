@@ -1,0 +1,8 @@
+https://jsonplaceholder.typicode.com/
+fetch dataları okumak ve bağlamak
+then response değişkeni döndürüyor onu da json döndürüyor
+dönen ta promise denir
+user değişkeni atıyourz.
+sonra tek tek okuyoruz.
+index,added ve list kopyaladık
+
