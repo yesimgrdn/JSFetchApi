@@ -1,11 +1,11 @@
 function listele()
 {
-        //fetch api :url döndürüryoruz o bize sonuç döndürür
+        //fetch api :url döndürüyoruz o bize sonuç döndürür
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(response=>response.json()) //parse json data promise
     //postman string 
-    //html html formatında sornra json çeviliyor
-    //user herhangi bir deişken
+    //http istegiğini json çeviliyor
+    
     .then(function(users)//başarılı ise
     {
         var row = "";
@@ -30,9 +30,7 @@ function ekle()
         method:"POST",
         //json stringe çeviriyor
         body:JSON.stringify(payload),
-        //bunu postman yapıyor
-        //utf-8 türkçeye çeviriyor
-        //utf-8 tüm dilleri destekliyor.
+ 
         headers:{"Content-type":"application/json; charset=UTF-8"}
     })
 
@@ -53,9 +51,7 @@ function guncelle()
         method:"PUT",
         //json stringe çeviriyor
         body:JSON.stringify(payload),
-        //bunu postman yapıyor
-        //utf-8 türkçeye çeviriyor
-        //utf-8 tüm dilleri destekliyor.
+     .
         headers:{"Content-type":"application/json; charset=UTF-8"}
     })
     .then(response=>response.json())
